@@ -1,6 +1,4 @@
-html {
-
-    background-image: url();
-
+body {
+    background: #505050;
+    background-image: url("../img/bg_comp.jpg");
 }
-
