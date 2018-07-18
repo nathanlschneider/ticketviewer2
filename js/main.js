@@ -1,16 +1,18 @@
-var demo1 = new autoComplete({
-    selector: '#inBox',
-    minChars: 1,
-    source: function (term, suggest) {
-        term = term.toLowerCase();
-        var suggestions = [];
-        for (i = 0; i < ns.choices.length; i++)
-            if (~ns.choices[i].toLowerCase().indexOf(term)) suggestions.push(ns.choices[i]);
-        suggest(suggestions);
-        clearNodes();
-    },
-    onSelect: function (e, term, item) {
-        console.log(item.getAttribute('data-val'));
+var app = (function () {
 
+    var statusSelector = document.querySelectorAll('.col-4');
+
+    for (var i = 0; i < statusSelector.length; i++) {
+        statusSelector[i].addEventListener('click', function () {
+            resetSelectors();
+            this.classList.remove("notActive");
+            this.classList.add("Active");
+        })
     }
-});
+
+    function resetSelectors() {
+        for (var i = 0; i < statusSelector.length; i++) {
+            statusSelector[i].classList.add("notActive");
+        }
+    }
+})();
