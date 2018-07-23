@@ -18,17 +18,23 @@
             <a class="navbar-brand" href="#">Incident Viewer</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
                 aria-expanded="false" aria-label="Toggle navigation">
+
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <form class="form-inline mt-2 mt-md-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+
+                <form id="sBox" class="form-inline">
+                    <input class="form-control" name="searchBox" type="text" placeholder="Search" aria-label="Search">
                 </form>
             </div>
         </nav>
     </header>
 
     <main role="main" class="container">
+        <div id="logAlert" class="alert alert-secondary" role="alert">
+            You are currenly not logged in to the system!  
+            <a href="#" class="alert-link"> Please login</a> to contnue. 
+        </div>
     </main>
 
     <footer class="footer bg-dark">
@@ -54,9 +60,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
     <script src="js/auto-complete.min.js"></script>
+    <script src="http://mhg-heattestlab/HEAT/Modules/HEATAPI/HEATApiClient?clientId=tv2&clientKey=aWb84BPj7mPrlUVVn0UUJPUjqzBYrBbRdjR/dp8hQro="></script>
+    <script src="js/heatcall.js"></script>
     <script src="js/main.js"></script>
-    <script src="http://mhg-heattestlab/HEAT/Modules/HEATAPI/HEATApiClient?clientId=StoreIncidentViewer&clientKey=kGJAmQajWczp8fhsCYAR3LlXYw5Bu9sMj5vyWa/5/pA="></script>
-
+    
 </body>
 
 </html>

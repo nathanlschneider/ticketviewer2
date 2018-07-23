@@ -12,6 +12,17 @@ body {
     margin-bottom: 60px;
 }
 
+#logAlert{
+margin-top: 100px;
+display: none;
+}
+
+
+#sBox {
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -38,3 +49,4 @@ body {
     background: #343a40;
     transition: all .5s;
 }
+
